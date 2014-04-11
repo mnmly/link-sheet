@@ -1,0 +1,78 @@
+.ui-sheet-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0
+}
+
+.ui-sheet-link {
+  background-color: white;
+  padding: 20px;
+  top: 0;
+  margin: 0 auto;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition: transform 0.2s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  max-width: 300px;
+  width: 100%;
+  border-top: 0px;
+}
+
+.ui-sheet-link.show {
+  -webkit-transform: translate3d(0, 0%, 0);
+  -ms-transform: translate3d(0, 0%, 0);
+  transform: translate3d(0, 0%, 0);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  transition: transform 0.25s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.ui-sheet-link .ui-prompt {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.ui-sheet-link textarea {
+  -webkit-appearance: none;
+  min-height: 50px;
+  appearance: none;
+  width: 100%;
+  border: 0px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 0.5em;
+}
+
+.ui-sheet-link .ui-buttons {
+  word-spacing: -0.4em;
+  font-size: inherit;
+}
+
+.ui-sheet-link button {
+  font-size: inherit;
+  margin-bottom: 0;
+}
+
+.ui-sheet-link .left,
+.ui-sheet-link .right {
+  width: 50%;
+  display: inline-block;
+  word-spacing: 0;
+}
+
+.ui-sheet-link .right {
+  text-align: right;
+}
+
+.ui-sheet-link .right button:last-child{
+  margin-right: 0;
+}
+
+
+
