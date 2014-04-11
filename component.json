@@ -1,0 +1,24 @@
+{
+  "name": "link-sheet",
+  "dependencies": {
+    "component/query": "*",
+    "component/domify": "*",
+    "component/classes": "*",
+    "component/events": "*",
+    "segmentio/is-url": "*",
+    "component/emitter": "*",
+    "timoxley/keycode": "*",
+    "jkroso/prefix": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "styles":[
+    "link-sheet.css"
+  ],
+  "templates": [
+    "template.html"
+  ],
+  "locals": []
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LinkSheet</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../build/build.css"/>
+    <style type="text/css" media="all">
+      .ui-sheet-link {
+        background-color: #EEEEEE;
+        font-family: 'Lucida Grande', sans-serif;
+        font-size: 13px;
+        /*border: 1px solid #888;*/
+        box-shadow: 0 1px 3px hsla(0, 0%, 30%, 0.8);
+      }
+      .right button {
+        width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../build/build.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+      var LinkSheet = require('link-sheet');
+
+      var message = 'Enter the Internet address (URL) for this link.';
+      var sheetA = new LinkSheet(message);
+      var sheetB = new LinkSheet(message, 'http://google.com');
+
+      sheetA.on('change', function(val){
+        var div = document.createElement('div');
+        div.textContent = val;
+        document.body.appendChild(div);
+      });
+
+      sheetA.on('hide', function(){
+        setTimeout(function(){
+          sheetB.duration(500);
+          sheetB.show();
+
+        }, 2000);
+      });
+
+      setTimeout(function(){
+        sheetA.show();
+      }, 500);
+    </script>
+  </body>
+</html>
