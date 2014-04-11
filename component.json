@@ -1,5 +1,7 @@
 {
   "name": "link-sheet",
+  "description": "Link sheet behaves like the one on osx.",
+  "verison": "0.0.1",
   "dependencies": {
     "component/query": "*",
     "component/domify": "*",

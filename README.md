@@ -4,12 +4,15 @@ Create link sheet that behaves like osx.
 
 ![](http://c.mnmly.com/UwgH/link-sheet.gif)
 
+☞ [Demo](http://mnmly.github.io/link-sheet)
 
 ### Install
 
 ```
 component install mnmly/link-sheet
 ```
+
+*note*: it doesn't include the style like the `demo`, the css comes with it is pretty much plain.
 
 ### Usage
 ```js
